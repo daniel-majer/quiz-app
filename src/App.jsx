@@ -1,18 +1,19 @@
-import { /* useState, */ useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
-/*   const [test, setTest] = useState('')
- */
+  const [test, setTest] = useState('')
+
   useEffect(() => {
     try {
       fetch('./questions.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setTest(data))
     } catch (error) {
       console.log(error)
     }
   }, [])
-
+  const { questions } = test
+  console.log(questions)
   return (
     <>
       <img src='logo1.png' alt='' />
