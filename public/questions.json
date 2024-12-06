@@ -1,139 +1,629 @@
 {
-  "questions": [
+  "categories": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
-      "correctOption": 1,
-      "points": 10
+      "category": "Geography",
+      "questions": [
+        {
+          "question": "Which is the largest continent by area?",
+          "options": ["Asia", "Africa", "North America", "Antarctica"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which country has the longest coastline in the world?",
+          "options": ["United States", "Australia", "Canada", "Russia"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the capital city of Australia?",
+          "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which desert is the largest in the world?",
+          "options": ["Sahara", "Arabian Desert", "Gobi", "Antarctic Desert"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the smallest country in the world by area?",
+          "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which river is the longest in the world?",
+          "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+          "correctOption": 1,
+          "points": 20
+        },
+        {
+          "question": "Mount Everest is part of which mountain range?",
+          "options": ["Andes", "Rocky Mountains", "Himalayas", "Alps"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the world's largest ocean?",
+          "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country has the most time zones?",
+          "options": ["Russia", "United States", "France", "China"],
+          "correctOption": 2,
+          "points": 20
+        },
+        {
+          "question": "Which city is known as 'The Eternal City'?",
+          "options": ["Athens", "Rome", "Istanbul", "Jerusalem"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which African country has the largest population?",
+          "options": ["Nigeria", "Egypt", "South Africa", "Ethiopia"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is the tallest waterfall in the world?",
+          "options": [
+            "Angel Falls",
+            "Niagara Falls",
+            "Victoria Falls",
+            "Iguazu Falls"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the largest island in the world?",
+          "options": ["Borneo", "Greenland", "New Guinea", "Madagascar"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which sea is the saltiest in the world?",
+          "options": ["Dead Sea", "Red Sea", "Baltic Sea", "Mediterranean Sea"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which country is home to the Great Barrier Reef?",
+          "options": ["Australia", "Indonesia", "Fiji", "Philippines"],
+          "correctOption": 0,
+          "points": 10
+        }
+      ]
     },
     {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
-      "correctOption": 3,
-      "points": 10
+      "category": "Science",
+      "questions": [
+        {
+          "question": "What is the chemical symbol for water?",
+          "options": ["H2O", "O2", "CO2", "HO"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What planet is known as the Red Planet?",
+          "options": ["Earth", "Mars", "Jupiter", "Venus"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the center of an atom called?",
+          "options": ["Electron", "Nucleus", "Proton", "Neutron"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the largest organ in the human body?",
+          "options": ["Liver", "Heart", "Skin", "Brain"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What gas do plants absorb during photosynthesis?",
+          "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the speed of light in vacuum?",
+          "options": [
+            "300,000 km/s",
+            "150,000 km/s",
+            "100,000 km/s",
+            "1,000 km/s"
+          ],
+          "correctOption": 0,
+          "points": 20
+        },
+        {
+          "question": "What element does 'O' represent on the periodic table?",
+          "options": ["Oxygen", "Gold", "Osmium", "Oganesson"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which planet has the most moons?",
+          "options": ["Jupiter", "Saturn", "Neptune", "Uranus"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the boiling point of water at sea level?",
+          "options": ["100°C", "212°F", "Both", "None"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the smallest unit of life?",
+          "options": ["Atom", "Molecule", "Cell", "Organ"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What does DNA stand for?",
+          "options": [
+            "Deoxyribonucleic Acid",
+            "Deoxynucleic Acid",
+            "Dinitroacetylene",
+            "Dinucleotide Acid"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the most abundant gas in Earth's atmosphere?",
+          "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is Newton's Third Law of Motion?",
+          "options": [
+            "For every action, there is an equal and opposite reaction",
+            "Objects in motion stay in motion",
+            "Force equals mass times acceleration",
+            "Energy is neither created nor destroyed"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the pH value of pure water?",
+          "options": ["7", "6", "5", "8"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the closest star to Earth?",
+          "options": [
+            "Sirius",
+            "Alpha Centauri",
+            "Proxima Centauri",
+            "The Sun"
+          ],
+          "correctOption": 3,
+          "points": 10
+        }
+      ]
     },
     {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
-      "correctOption": 0,
-      "points": 10
+      "category": "History",
+      "questions": [
+        {
+          "question": "Who was the first president of the United States?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "John Adams",
+            "Abraham Lincoln"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What year did World War II end?",
+          "options": ["1944", "1945", "1946", "1947"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Who wrote the Declaration of Independence?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "James Madison",
+            "Benjamin Franklin"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which empire built the Colosseum?",
+          "options": ["Greek", "Roman", "Ottoman", "Byzantine"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "In what year did the Titanic sink?",
+          "options": ["1910", "1912", "1914", "1916"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Who was the leader of Nazi Germany?",
+          "options": [
+            "Joseph Stalin",
+            "Adolf Hitler",
+            "Benito Mussolini",
+            "Winston Churchill"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What ancient civilization built the Pyramids of Giza?",
+          "options": ["Aztecs", "Romans", "Egyptians", "Mayans"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was known as the Maid of Orleans?",
+          "options": [
+            "Marie Antoinette",
+            "Joan of Arc",
+            "Cleopatra",
+            "Elizabeth I"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year did the Berlin Wall fall?",
+          "options": ["1987", "1988", "1989", "1990"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the first man to step on the moon?",
+          "options": [
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "Neil Armstrong",
+            "Michael Collins"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the ship on which the Pilgrims traveled to America in 1620?",
+          "options": ["Mayflower", "Santa Maria", "Endeavour", "Beagle"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the last Queen of France before the French Revolution?",
+          "options": [
+            "Marie Antoinette",
+            "Catherine de' Medici",
+            "Anne of Austria",
+            "Marguerite of Valois"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who discovered America in 1492?",
+          "options": [
+            "Christopher Columbus",
+            "Ferdinand Magellan",
+            "Amerigo Vespucci",
+            "John Cabot"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which war was fought between the North and South regions in the United States?",
+          "options": [
+            "Revolutionary War",
+            "Civil War",
+            "War of 1812",
+            "Spanish-American War"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the ship Charles Darwin traveled on?",
+          "options": [
+            "HMS Beagle",
+            "HMS Victory",
+            "HMS Endeavour",
+            "HMS Discovery"
+          ],
+          "correctOption": 0,
+          "points": 10
+        }
+      ]
     },
     {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
-      "correctOption": 2,
-      "points": 10
+      "category": "Entertainment",
+      "questions": [
+        {
+          "question": "Who played Jack in the movie Titanic?",
+          "options": [
+            "Leonardo DiCaprio",
+            "Brad Pitt",
+            "Tom Cruise",
+            "Johnny Depp"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which animated movie features a talking snowman named Olaf?",
+          "options": ["Frozen", "Tangled", "Moana", "The Lion King"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who is known as the King of Pop?",
+          "options": [
+            "Elvis Presley",
+            "Prince",
+            "Michael Jackson",
+            "Justin Bieber"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which TV series is set in the fictional land of Westeros?",
+          "options": [
+            "The Witcher",
+            "Game of Thrones",
+            "Vikings",
+            "The Mandalorian"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of Harry Potter's pet owl?",
+          "options": ["Hedwig", "Errol", "Crookshanks", "Fawkes"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie features the song 'My Heart Will Go On'?",
+          "options": [
+            "Titanic",
+            "Moulin Rouge",
+            "The Bodyguard",
+            "The Notebook"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who directed the movie 'Inception'?",
+          "options": [
+            "Christopher Nolan",
+            "Steven Spielberg",
+            "James Cameron",
+            "Quentin Tarantino"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie franchise features a character named Frodo Baggins?",
+          "options": [
+            "Harry Potter",
+            "The Hobbit",
+            "Lord of the Rings",
+            "Percy Jackson"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which singer released the album 'Thriller'?",
+          "options": [
+            "Prince",
+            "Michael Jackson",
+            "Madonna",
+            "Whitney Houston"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the highest-grossing film of all time?",
+          "options": [
+            "Avatar",
+            "Avengers: Endgame",
+            "Titanic",
+            "The Lion King"
+          ],
+          "correctOption": 1,
+          "points": 20
+        },
+        {
+          "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+          "options": [
+            "Chris Evans",
+            "Robert Downey Jr.",
+            "Mark Ruffalo",
+            "Chris Hemsworth"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the main character in 'The Matrix'?",
+          "options": ["Neo", "Morpheus", "Trinity", "Smith"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which Disney movie features the song 'A Whole New World'?",
+          "options": [
+            "Aladdin",
+            "Beauty and the Beast",
+            "The Little Mermaid",
+            "Frozen"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who won the Oscar for Best Actress in 2023?",
+          "options": [
+            "Cate Blanchett",
+            "Michelle Yeoh",
+            "Jessica Chastain",
+            "Margot Robbie"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which TV show is known for the quote 'Winter is coming'?",
+          "options": [
+            "Game of Thrones",
+            "The Witcher",
+            "Breaking Bad",
+            "Vikings"
+          ],
+          "correctOption": 0,
+          "points": 10
+        }
+      ]
     },
     {
-      "question": "How does data flow naturally in React apps?",
-      "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
-      ],
-      "correctOption": 0,
-      "points": 10
-    },
-    {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "When to use derived state?",
-      "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "What triggers a UI re-render in React?",
-      "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
-      ],
-      "correctOption": 2,
-      "points": 20
-    },
-    {
-      "question": "When do we directly \"touch\" the DOM in React?",
-      "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
-      ],
-      "correctOption": 3,
-      "points": 20
-    },
-    {
-      "question": "In what situation do we use a callback to update state?",
-      "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "Which variables should go into the useEffect dependency array?",
-      "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "An effect will always run on the initial render.",
-      "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
-      ],
-      "correctOption": 0,
-      "points": 30
-    },
-    {
-      "question": "When will an effect run if it doesn't have a dependency array?",
-      "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
-      ],
-      "correctOption": 3,
-      "points": 20
+      "category": "Technology",
+      "questions": [
+        {
+          "question": "Who is the founder of Microsoft?",
+          "options": [
+            "Bill Gates",
+            "Steve Jobs",
+            "Elon Musk",
+            "Mark Zuckerberg"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What does 'HTTP' stand for?",
+          "options": [
+            "HyperText Transfer Protocol",
+            "HyperTransfer Text Protocol",
+            "HighText Transfer Protocol",
+            "HyperText Transmission Protocol"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which social media platform is known for its 280-character limit?",
+          "options": ["Twitter", "Instagram", "Facebook", "LinkedIn"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What year was the first iPhone released?",
+          "options": ["2005", "2006", "2007", "2008"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the main programming language used for Android app development?",
+          "options": ["Swift", "Java", "Python", "C++"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What does 'AI' stand for?",
+          "options": [
+            "Artificial Insight",
+            "Artificial Intelligence",
+            "Automated Interaction",
+            "Advanced Innovation"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the world's largest search engine?",
+          "options": ["Bing", "Google", "Yahoo", "DuckDuckGo"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which company manufactures the Galaxy line of smartphones?",
+          "options": ["Apple", "Samsung", "Google", "Huawei"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of Apple's desktop operating system?",
+          "options": ["Windows", "iOS", "macOS", "Linux"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the abbreviation for 'Central Processing Unit'?",
+          "options": ["GPU", "CPU", "RAM", "ROM"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What does 'Wi-Fi' stand for?",
+          "options": [
+            "Wireless Fidelity",
+            "Wireless Finder",
+            "Wide Frequency",
+            "Wide Fidelity"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which company developed the video game 'Minecraft'?",
+          "options": ["Epic Games", "Mojang", "Nintendo", "Ubisoft"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the smallest unit of data in a computer?",
+          "options": ["Bit", "Byte", "Kilobyte", "Megabyte"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the term for a system error causing a program to malfunction?",
+          "options": ["Bug", "Virus", "Glitch", "Lag"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which programming language is used for web development and starts with 'J'?",
+          "options": ["JavaScript", "Java", "Jython", "Julia"],
+          "correctOption": 0,
+          "points": 10
+        }
+      ]
     }
   ]
 }
