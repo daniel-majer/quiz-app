@@ -46,18 +46,25 @@
 .questionName .choosenAnswer {
   background-color: #00afbf;
   transform: translateX(3rem);
-  animation: blinkAnimation 0.8s linear forwards 10;
+}
+
+.questionName .trueAnswer {
+  animation: blinkAnimation 0.6s linear forwards 10;
 }
 @keyframes blinkAnimation {
   0% {
-    background-color: #00717b;
+    background-color: #049caa;
   }
   50% {
     background-color: orange;
   }
   100% {
-    background-color: #00717b;
+    background-color: #049caa;
   }
+}
+
+.questionFooter .confirm {
+  border: 2px solid orange;
 }
 
 .questionFooter {

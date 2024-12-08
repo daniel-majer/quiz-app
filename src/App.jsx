@@ -49,6 +49,20 @@ function reducer(state, action) {
         ...state,
         status: 'active',
       }
+
+    case 'answer':
+      return { ...state, answer: action.payload }
+
+    case 'confirm':
+      const answer = state.questions[state.index].correctOption
+      
+      console.log(answer === state.answer)
+
+      return {
+        ...state,
+        answer,
+      }
+
     case 'next':
       const index = state.index + 1
 
@@ -56,10 +70,8 @@ function reducer(state, action) {
         ...state,
         status: index === state.questions.length ? 'finished' : state.status,
         index,
-        answer: '',
+        tempAnswer: '',
       }
-    case 'answer':
-      return { ...state, answer: action.payload }
     default:
       throw new Error('Unknown type')
   }

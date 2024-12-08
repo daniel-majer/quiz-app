@@ -22,9 +22,15 @@ export const Questions = ({ questions, dispatch, index, answer }) => {
               <button
                 key={i}
                 onClick={() => dispatch({ type: 'answer', payload: option })}
-                className={`${answer ? styles.questionAnswer : ''} ${
-                  answer === option && styles.choosenAnswer
-                }`}
+                disabled={false}
+                className={`${answer ? styles.questionAnswer : ''}
+                ${answer === option ? styles.choosenAnswer : ''}
+                ${answer === i ? styles.trueAnswer : ''}
+                
+`}
+
+                /*   className={`${answer ?? styles.questionAnswer} 
+                ${answer === i ? styles.choosenAnswer : ''}`} */
               >
                 {option}
               </button>
@@ -36,7 +42,12 @@ export const Questions = ({ questions, dispatch, index, answer }) => {
       <footer className={styles.questionFooter}>
         <p>timer</p>
         <div>
-          <button>confirm</button>
+          <button
+            className={answer || answer === 0 ? styles.confirm : ''}
+            onClick={() => dispatch({ type: 'confirm' })}
+          >
+            confirm
+          </button>
           <button onClick={() => dispatch({ type: 'next' })}>next</button>
         </div>
       </footer>
