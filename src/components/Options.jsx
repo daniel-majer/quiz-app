@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-export const Options = ({ questions }) => {
+export const Options = ({ data }) => {
+  
   return (
     <>
-      {questions.map(question => {
+      {data.map(question => {
         return (
           <option
             key={crypto.randomUUID()}

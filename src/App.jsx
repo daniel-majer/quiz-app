@@ -1,14 +1,18 @@
+/* eslint-disable no-case-declarations */
 /* eslint-disable no-unused-vars */
 import { useEffect, useReducer } from 'react'
+
 import { Header } from './components/Header'
 import { Main } from './components/Main'
 import { StartScreen } from './components/StartScreen'
 import { Error } from './components/Error'
 import { Loading } from './components/Loading'
 import { Questions } from './components/Questions'
+import { Finish } from './components/Finish'
 
 // 'loading', 'error', 'ready', 'active', 'finished'
 const initialState = {
+  data: [],
   questions: [],
   category: 'choose',
   status: 'loading',
@@ -19,12 +23,17 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'questions':
-      return { ...state, questions: action.payload.categories, status: 'ready' }
+    case 'data':
+      return { ...state, data: action.payload.categories, status: 'ready' }
     case 'category':
+      const { category = 'choose', questions = [] } = state.data.find(
+        q => q.category.toLowerCase() === action.payload.toLowerCase()
+      )
+
       return {
         ...state,
-        category: action.payload,
+        category: category.toLowerCase(),
+        questions: questions,
         alert: state.alert === true ? false : false,
       }
     case 'error':
@@ -41,7 +50,14 @@ function reducer(state, action) {
         status: 'active',
       }
     case 'next':
-      return { ...state, index: state.index + 1, answer: '' }
+      const index = state.index + 1
+
+      return {
+        ...state,
+        status: index === state.questions.length ? 'finished' : state.status,
+        index,
+        answer: '',
+      }
     case 'answer':
       return { ...state, answer: action.payload }
     default:
@@ -50,13 +66,15 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [{ questions, category, status, alert, index, answer }, dispatch] =
-    useReducer(reducer, initialState)
+  const [
+    { data, questions, category, status, alert, index, answer },
+    dispatch,
+  ] = useReducer(reducer, initialState)
 
   useEffect(() => {
     fetch('./questions.json')
       .then(res => res.json())
-      .then(data => dispatch({ type: 'questions', payload: data }))
+      .then(data => dispatch({ type: 'data', payload: data }))
       .catch(() => dispatch({ type: 'error' }))
   }, [])
 
@@ -68,7 +86,7 @@ function App() {
         {status === 'error' && <Error />}
         {status === 'ready' && (
           <StartScreen
-            questions={questions}
+            data={data}
             category={category}
             dispatch={dispatch}
             alert={alert}
@@ -77,12 +95,12 @@ function App() {
         {status === 'active' && (
           <Questions
             questions={questions}
-            category={category}
             dispatch={dispatch}
             index={index}
             answer={answer}
           />
         )}
+        {status === 'finished' && <Finish />}
       </Main>
     </>
   )
