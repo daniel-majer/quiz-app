@@ -33,14 +33,15 @@
   padding: 0.6rem 0;
   cursor: pointer;
   transition: var(--transition);
+  
 }
 .questionName button:hover {
   background-color: transparent;
 }
-.questionName .questionAnswer {
+.questionName .colorAnswers {
   background-color: orange;
 }
-.questionName .questionAnswer:hover {
+.questionName .colorAnswers:hover {
   background-color: #00afbf;
 }
 .questionName .choosenAnswer {

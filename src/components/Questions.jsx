@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
 import styles from './Questions.module.css'
 
-export const Questions = ({ questions, dispatch, index, answer }) => {
+export const Questions = ({
+  questions,
+  dispatch,
+  index,
+  answer,
+  confirmed,
+}) => {
   return (
     <>
       <header className={styles.questionsHeader}>
@@ -21,16 +27,12 @@ export const Questions = ({ questions, dispatch, index, answer }) => {
             return (
               <button
                 key={i}
-                onClick={() => dispatch({ type: 'answer', payload: option })}
-                disabled={false}
-                className={`${answer ? styles.questionAnswer : ''}
-                ${answer === option ? styles.choosenAnswer : ''}
-                ${answer === i ? styles.trueAnswer : ''}
-                
-`}
-
-                /*   className={`${answer ?? styles.questionAnswer} 
-                ${answer === i ? styles.choosenAnswer : ''}`} */
+                onClick={() => dispatch({ type: 'answer', payload: i })}
+                disabled={answer && true}
+                className={`${answer === 0 || answer ? styles.colorAnswers : ''}
+                ${answer === i ? styles.choosenAnswer : ''}
+                ${confirmed === i ? styles.trueAnswer : ''}
+        `}
               >
                 {option}
               </button>
@@ -43,7 +45,7 @@ export const Questions = ({ questions, dispatch, index, answer }) => {
         <p>timer</p>
         <div>
           <button
-            className={answer || answer === 0 ? styles.confirm : ''}
+            className={answer /* || answer === 0 */ ? styles.confirm : ''}
             onClick={() => dispatch({ type: 'confirm' })}
           >
             confirm

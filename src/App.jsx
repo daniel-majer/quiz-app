@@ -19,6 +19,7 @@ const initialState = {
   alert: false,
   index: 0,
   answer: '',
+  confirmed: null,
 }
 
 function reducer(state, action) {
@@ -55,12 +56,13 @@ function reducer(state, action) {
 
     case 'confirm':
       const answer = state.questions[state.index].correctOption
-      
+
       console.log(answer === state.answer)
 
       return {
         ...state,
-        answer,
+        confirmed: answer,
+        answer: '',
       }
 
     case 'next':
@@ -79,7 +81,7 @@ function reducer(state, action) {
 
 function App() {
   const [
-    { data, questions, category, status, alert, index, answer },
+    { data, questions, category, status, alert, index, answer, confirmed },
     dispatch,
   ] = useReducer(reducer, initialState)
 
@@ -110,6 +112,7 @@ function App() {
             dispatch={dispatch}
             index={index}
             answer={answer}
+            confirmed={confirmed}
           />
         )}
         {status === 'finished' && <Finish />}
