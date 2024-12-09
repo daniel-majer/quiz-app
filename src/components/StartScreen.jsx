@@ -3,7 +3,6 @@ import { Options } from './Options'
 import styles from './StartScreen.module.css'
 
 export const StartScreen = ({ data, category, dispatch, alert }) => {
-  console.log(category)
   return (
     <div className={styles.start}>
       <h2>Welcome to The React Quiz!</h2>

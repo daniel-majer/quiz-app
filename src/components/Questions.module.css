@@ -33,7 +33,6 @@
   padding: 0.6rem 0;
   cursor: pointer;
   transition: var(--transition);
-  
 }
 .questionName button:hover {
   background-color: transparent;

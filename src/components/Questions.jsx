@@ -8,6 +8,7 @@ export const Questions = ({
   answer,
   confirmed,
 }) => {
+  const actualQuestion = questions[index]
   return (
     <>
       <header className={styles.questionsHeader}>
@@ -21,14 +22,14 @@ export const Questions = ({
       </header>
 
       <div className={styles.questionName}>
-        <h4>{questions[index].question}</h4>
+        <h4>{actualQuestion.question}</h4>
         <div>
-          {questions[index].options.map((option, i) => {
+          {actualQuestion.options.map((option, i) => {
             return (
               <button
                 key={i}
                 onClick={() => dispatch({ type: 'answer', payload: i })}
-                disabled={answer && true}
+                /* disabled={answer && true} */
                 className={`${answer === 0 || answer ? styles.colorAnswers : ''}
                 ${answer === i ? styles.choosenAnswer : ''}
                 ${confirmed === i ? styles.trueAnswer : ''}

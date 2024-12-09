@@ -14,11 +14,11 @@ import { Finish } from './components/Finish'
 const initialState = {
   data: [],
   questions: [],
-  category: 'choose',
-  status: 'loading',
+  category: 'choose', /* delete */
+  status: 'loading', 
   alert: false,
   index: 0,
-  answer: '',
+  answer: null,
   confirmed: null,
 }
 
@@ -40,6 +40,7 @@ function reducer(state, action) {
     case 'error':
       return { ...state, status: 'error' }
     case 'play':
+      console.log(state.questions, state.data)
       if (state.category === 'choose')
         return {
           ...state,
