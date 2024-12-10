@@ -6,9 +6,10 @@ export const Questions = ({
   dispatch,
   index,
   answer,
-  confirmed,
+  isConfirm,
 }) => {
   const actualQuestion = questions[index]
+  console.log(actualQuestion)
   return (
     <>
       <header className={styles.questionsHeader}>
@@ -29,10 +30,14 @@ export const Questions = ({
               <button
                 key={i}
                 onClick={() => dispatch({ type: 'answer', payload: i })}
-                /* disabled={answer && true} */
+                disabled={isConfirm && actualQuestion.correctOption !== i}
                 className={`${answer === 0 || answer ? styles.colorAnswers : ''}
                 ${answer === i ? styles.choosenAnswer : ''}
-                ${confirmed === i ? styles.trueAnswer : ''}
+                ${
+                  isConfirm && actualQuestion.correctOption === i
+                    ? styles.trueAnswer
+                    : ''
+                }
         `}
               >
                 {option}

@@ -14,12 +14,12 @@ import { Finish } from './components/Finish'
 const initialState = {
   data: [],
   questions: [],
-  category: 'choose', /* delete */
-  status: 'loading', 
+  category: 'choose' /* delete */,
+  status: 'loading',
   alert: false,
   index: 0,
   answer: null,
-  confirmed: null,
+  isConfirm: false,
 }
 
 function reducer(state, action) {
@@ -56,14 +56,9 @@ function reducer(state, action) {
       return { ...state, answer: action.payload }
 
     case 'confirm':
-      const answer = state.questions[state.index].correctOption
-
-      console.log(answer === state.answer)
-
       return {
         ...state,
-        confirmed: answer,
-        answer: '',
+        isConfirm: true,
       }
 
     case 'next':
@@ -82,7 +77,7 @@ function reducer(state, action) {
 
 function App() {
   const [
-    { data, questions, category, status, alert, index, answer, confirmed },
+    { data, questions, category, status, alert, index, answer, isConfirm },
     dispatch,
   ] = useReducer(reducer, initialState)
 
@@ -113,7 +108,7 @@ function App() {
             dispatch={dispatch}
             index={index}
             answer={answer}
-            confirmed={confirmed}
+            isConfirm={isConfirm}
           />
         )}
         {status === 'finished' && <Finish />}
