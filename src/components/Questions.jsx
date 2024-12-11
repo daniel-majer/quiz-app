@@ -1,4 +1,7 @@
+/* eslint-disable no-constant-binary-expression */
 /* eslint-disable react/prop-types */
+
+import { useEffect } from 'react'
 import styles from './Questions.module.css'
 
 export const Questions = ({
@@ -7,9 +10,27 @@ export const Questions = ({
   index,
   answer,
   isConfirm,
+  score,
+  seconds,
 }) => {
   const actualQuestion = questions[index]
-  console.log(actualQuestion)
+
+  useEffect(
+    function () {
+      const timer = setInterval(() => dispatch({ type: 'timer' }), 1000)
+
+      return () => clearInterval(timer)
+    },
+    [dispatch]
+  )
+
+  const hours = Math.floor(seconds / 60)
+  const remainingSecs = seconds % 60
+
+  const maxScore = questions.reduce((acc, curr) => {
+    return curr.points + acc
+  }, 0)
+
   return (
     <>
       <header className={styles.questionsHeader}>
@@ -18,7 +39,9 @@ export const Questions = ({
           <p>
             Question <strong>{index + 1}</strong> / {questions.length}
           </p>
-          <p>0/280</p>
+          <p>
+            {score}/{maxScore}
+          </p>
         </div>
       </header>
 
@@ -32,10 +55,18 @@ export const Questions = ({
                 onClick={() => dispatch({ type: 'answer', payload: i })}
                 disabled={isConfirm && actualQuestion.correctOption !== i}
                 className={`${answer === 0 || answer ? styles.colorAnswers : ''}
-                ${answer === i ? styles.choosenAnswer : ''}
+                ${
+                  !isConfirm && answer === i
+                    ? styles.choosenAnswer
+                    : answer !== actualQuestion.correctOption &&
+                      answer === i &&
+                      isConfirm
+                    ? styles.uncorrect
+                    : ''
+                }
                 ${
                   isConfirm && actualQuestion.correctOption === i
-                    ? styles.trueAnswer
+                    ? styles.correct
                     : ''
                 }
         `}
@@ -48,15 +79,23 @@ export const Questions = ({
       </div>
 
       <footer className={styles.questionFooter}>
-        <p>timer</p>
+        <p>
+          0{hours}:{remainingSecs < 10 ? '0' + remainingSecs : remainingSecs}
+        </p>
         <div>
           <button
-            className={answer /* || answer === 0 */ ? styles.confirm : ''}
+            disabled={!(answer === 0 || answer) || isConfirm}
+            className={answer || answer === 0 ? styles.confirm : ''}
             onClick={() => dispatch({ type: 'confirm' })}
           >
             confirm
           </button>
-          <button onClick={() => dispatch({ type: 'next' })}>next</button>
+          <button
+            disabled={!isConfirm}
+            onClick={() => dispatch({ type: 'next' })}
+          >
+            {index === questions.length - 1 ? 'finish' : 'next'}
+          </button>
         </div>
       </footer>
     </>

@@ -43,13 +43,24 @@
 .questionName .colorAnswers:hover {
   background-color: #00afbf;
 }
+.questionName .colorAnswers:disabled:hover {
+  background-color: orange;
+  cursor: not-allowed;
+}
 .questionName .choosenAnswer {
   background-color: #00afbf;
   transform: translateX(3rem);
 }
+.questionName .uncorrect {
+  background-color: red;
+}
+.questionName .uncorrect:disabled:hover {
+  background-color: red;
+}
 
-.questionName .trueAnswer {
+.questionName .correct {
   animation: blinkAnimation 0.6s linear forwards 10;
+  transform: translateX(3rem);
 }
 @keyframes blinkAnimation {
   0% {
@@ -66,24 +77,73 @@
 .questionFooter .confirm {
   border: 2px solid orange;
 }
+.questionFooter .confirm:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--btn-bg);
+}
 
 .questionFooter {
   display: flex;
   justify-content: space-between;
 }
 .questionFooter button {
-  width: 16rem;
+  /*   width: 16rem;
   font-size: 2rem;
-  padding: 1.2rem /* 2.4rem */;
+  padding: 1.2rem;
   border-radius: 10rem;
   border: 1px solid var(--btn-bg);
   background-color: var(--btn-bg);
   cursor: pointer;
+   */
+  width: 16rem;
+  font-size: 2rem;
+  padding: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
   transition: var(--transition);
+  background: transparent;
+  border-radius: 10rem;
+
+  position: relative;
+  display: inline-block;
+  outline: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 2px solid orange;
+  color: orange;
 }
 .questionFooter button:hover {
+  color: #fff;
+}
+.questionFooter button:hover:after {
+  width: 100%;
+}
+.questionFooter button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: var(--transition);
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: orange;
+}
+.questionFooter button:disabled {
+  border: 1px solid var(--btn-bg);
+  color: #ffffff72;
+  cursor: not-allowed;
+  font-weight: normal;
+}
+.questionFooter button:disabled:hover:after {
+  width: 0%;
+}
+
+/* .questionFooter button:hover {
   background-color: transparent;
 }
+ */
+
 .questionFooter p {
   font-size: 2rem;
   padding: 1.2rem 2.4rem;
@@ -94,4 +154,40 @@
 .questionFooter div {
   display: flex;
   gap: 2rem;
+}
+
+.css-button-sliding-to-left--yellow {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #ffd819;
+  color: #ffd819;
+}
+.css-button-sliding-to-left--yellow:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--yellow:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--yellow:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #ffd819;
 }

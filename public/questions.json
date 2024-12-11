@@ -37,7 +37,7 @@
           "question": "Which river is the longest in the world?",
           "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
           "correctOption": 1,
-          "points": 20
+          "points": 10
         },
         {
           "question": "Mount Everest is part of which mountain range?",
@@ -55,7 +55,7 @@
           "question": "Which country has the most time zones?",
           "options": ["Russia", "United States", "France", "China"],
           "correctOption": 2,
-          "points": 20
+          "points": 10
         },
         {
           "question": "Which city is known as 'The Eternal City'?",
@@ -142,7 +142,7 @@
             "1,000 km/s"
           ],
           "correctOption": 0,
-          "points": 20
+          "points": 10
         },
         {
           "question": "What element does 'O' represent on the periodic table?",
@@ -456,7 +456,7 @@
             "The Lion King"
           ],
           "correctOption": 1,
-          "points": 20
+          "points": 10
         },
         {
           "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",

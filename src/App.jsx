@@ -10,6 +10,8 @@ import { Loading } from './components/Loading'
 import { Questions } from './components/Questions'
 import { Finish } from './components/Finish'
 
+const MAX_SEC = 300
+
 // 'loading', 'error', 'ready', 'active', 'finished'
 const initialState = {
   data: [],
@@ -20,6 +22,8 @@ const initialState = {
   index: 0,
   answer: null,
   isConfirm: false,
+  score: 0,
+  seconds: MAX_SEC,
 }
 
 function reducer(state, action) {
@@ -40,7 +44,6 @@ function reducer(state, action) {
     case 'error':
       return { ...state, status: 'error' }
     case 'play':
-      console.log(state.questions, state.data)
       if (state.category === 'choose')
         return {
           ...state,
@@ -53,12 +56,18 @@ function reducer(state, action) {
       }
 
     case 'answer':
+      if (state.isConfirm) return { ...state }
       return { ...state, answer: action.payload }
 
     case 'confirm':
+      console.log(state.questions[state.index].correctOption)
       return {
         ...state,
         isConfirm: true,
+        score:
+          state.questions[state.index].correctOption === state.answer
+            ? state.score + state.questions[state.answer].points
+            : state.score,
       }
 
     case 'next':
@@ -68,8 +77,13 @@ function reducer(state, action) {
         ...state,
         status: index === state.questions.length ? 'finished' : state.status,
         index,
-        tempAnswer: '',
+        answer: null,
+        isConfirm: false,
       }
+
+    case 'timer':
+      if (state.seconds === 0) return { ...state, status: 'finished' }
+      return { ...state, seconds: state.seconds - 1 }
     default:
       throw new Error('Unknown type')
   }
@@ -77,7 +91,18 @@ function reducer(state, action) {
 
 function App() {
   const [
-    { data, questions, category, status, alert, index, answer, isConfirm },
+    {
+      data,
+      questions,
+      category,
+      status,
+      alert,
+      index,
+      answer,
+      isConfirm,
+      score,
+      seconds,
+    },
     dispatch,
   ] = useReducer(reducer, initialState)
 
@@ -109,6 +134,8 @@ function App() {
             index={index}
             answer={answer}
             isConfirm={isConfirm}
+            score={score}
+            seconds={seconds}
           />
         )}
         {status === 'finished' && <Finish />}
