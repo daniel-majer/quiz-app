@@ -34,7 +34,7 @@ export const Questions = ({
   return (
     <>
       <header className={styles.questionsHeader}>
-        <progress max={questions.length} value={10}></progress>
+        <progress max={questions.length} value={index + 1}></progress>
         <div>
           <p>
             Question <strong>{index + 1}</strong> / {questions.length}
@@ -82,21 +82,23 @@ export const Questions = ({
         <p>
           0{hours}:{remainingSecs < 10 ? '0' + remainingSecs : remainingSecs}
         </p>
-        <div>
-          <button
-            disabled={!(answer === 0 || answer) || isConfirm}
-            className={answer || answer === 0 ? styles.confirm : ''}
-            onClick={() => dispatch({ type: 'confirm' })}
-          >
-            confirm
-          </button>
-          <button
-            disabled={!isConfirm}
-            onClick={() => dispatch({ type: 'next' })}
-          >
-            {index === questions.length - 1 ? 'finish' : 'next'}
-          </button>
-        </div>
+        {
+          <div>
+            <button
+              disabled={!(answer === 0 || answer) || isConfirm}
+              className={answer || answer === 0 ? styles.confirm : ''}
+              onClick={() => dispatch({ type: 'confirm' })}
+            >
+              confirm
+            </button>
+            <button
+              disabled={!isConfirm}
+              onClick={() => dispatch({ type: 'next' })}
+            >
+              {index === questions.length - 1 ? 'finish' : 'next'}
+            </button>
+          </div>
+        }
       </footer>
     </>
   )

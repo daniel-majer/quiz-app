@@ -5,7 +5,6 @@
   font-family: 'Ubuntu';
   text-align: center;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #343a40;
 
@@ -23,9 +22,8 @@
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  border: 2px solid black;
   min-height: 100vh;
-  margin-bottom: 4rem;
+  border: 2px solid black;
 }
 
 body {
@@ -38,4 +36,10 @@ main {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 4rem;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 90%;
+  }
 }

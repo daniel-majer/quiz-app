@@ -5,8 +5,8 @@ import styles from './StartScreen.module.css'
 export const StartScreen = ({ data, category, dispatch, alert }) => {
   return (
     <div className={styles.start}>
-      <h2>Welcome to The React Quiz!</h2>
-      <h3>15 questions to test your skills</h3>
+      <h2>Welcome to The SmartQuest Game!</h2>
+      <h3>15 questions to test your knowledges</h3>
       <select
         value={category}
         onChange={e => dispatch({ type: 'category', payload: e.target.value })}
