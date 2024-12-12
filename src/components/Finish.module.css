@@ -1,0 +1,63 @@
+.score {
+  font-size: 2.4rem;
+  background-color: #03929f;
+  border-radius: 10rem;
+  padding: 2rem 0;
+  margin: 0 4rem 2rem;
+}
+
+.highScore {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1536px) {
+  .score {
+    font-size: 2.2rem;
+    margin: 0 6rem 2rem;
+  }
+  /*     background-color: #03929f;
+    border-radius: 10rem;
+    padding: 2rem 0;
+  }*/
+
+  .highScore {
+    font-size: 1.9rem;
+    /* margin-bottom: 4rem; */
+  }
+}
+
+@media (max-width: 1280px) {
+  .score {
+    font-size: 2rem;
+    margin: 0 8rem 2rem;
+  }
+
+  .highScore {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .score {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+
+  .highScore {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .score {
+    padding: 2rem;
+    margin: 0 2rem 2rem;
+  }
+
+  .highScore {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+}

@@ -84,6 +84,9 @@ function reducer(state, action) {
     case 'timer':
       if (state.seconds === 0) return { ...state, status: 'finished' }
       return { ...state, seconds: state.seconds - 1 }
+
+    case 'restart':
+      return { ...initialState, data: state.data, status: 'ready' }
     default:
       throw new Error('Unknown type')
   }
@@ -119,13 +122,8 @@ function App() {
       <Main>
         {status === 'loading' && <Loading />}
         {status === 'error' && <Error />}
-        {status === 'ready' && (
-          <StartScreen
-            data={data}
-            category={category}
-            dispatch={dispatch}
-            alert={alert}
-          />
+        {status === 'ready' && (<Finish dispatch={dispatch}/>
+      
         )}
         {status === 'active' && (
           <Questions
@@ -138,7 +136,7 @@ function App() {
             seconds={seconds}
           />
         )}
-        {status === 'finished' && <Finish />}
+        {status === 'finished' && <Finish dispatch={dispatch} />}
       </Main>
     </>
   )

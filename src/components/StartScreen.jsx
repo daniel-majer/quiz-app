@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Button from './Button'
 import { Options } from './Options'
 import styles from './StartScreen.module.css'
 
@@ -14,9 +15,11 @@ export const StartScreen = ({ data, category, dispatch, alert }) => {
         <option value='choose'>Choose category</option>
         <Options data={data} />
       </select>
-      <button onClick={() => dispatch({ type: 'play' })}>
+
+      <Button onclick={() => dispatch({ type: 'play' })}>
         <strong>Let&#39;s start!</strong>
-      </button>
+      </Button>
+
       {alert && <p>Please select category.</p>}
     </div>
   )
