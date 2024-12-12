@@ -122,8 +122,13 @@ function App() {
       <Main>
         {status === 'loading' && <Loading />}
         {status === 'error' && <Error />}
-        {status === 'ready' && (<Finish dispatch={dispatch}/>
-      
+        {status === 'ready' && (
+          <StartScreen
+            data={data}
+            category={category}
+            dispatch={dispatch}
+            alert={alert}
+          />
         )}
         {status === 'active' && (
           <Questions
@@ -136,7 +141,9 @@ function App() {
             seconds={seconds}
           />
         )}
-        {status === 'finished' && <Finish dispatch={dispatch} />}
+        {status === 'finished' && (
+          <Finish dispatch={dispatch} score={score} questions={questions} />
+        )}
       </Main>
     </>
   )
