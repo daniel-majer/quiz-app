@@ -1,18 +1,11 @@
-/* eslint-disable no-constant-binary-expression */
-/* eslint-disable react/prop-types */
-
 import { useEffect } from 'react'
 import styles from './Questions.module.css'
+import { useQuestion } from '../contexts/QuestionsContext'
 
-export const Questions = ({
-  questions,
-  dispatch,
-  index,
-  answer,
-  isConfirm,
-  score,
-  seconds,
-}) => {
+export const Questions = () => {
+  const { questions, dispatch, index, answer, isConfirm, score, seconds } =
+    useQuestion()
+
   const actualQuestion = questions[index]
 
   useEffect(

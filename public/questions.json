@@ -97,9 +97,213 @@
           "options": ["Australia", "Indonesia", "Fiji", "Philippines"],
           "correctOption": 0,
           "points": 10
+        },
+        {
+          "question": "Which is the world's smallest ocean?",
+          "options": [
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Southern Ocean",
+            "Atlantic Ocean"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the capital city of Canada?",
+          "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which continent is known as 'The Land Down Under'?",
+          "options": ["Africa", "South America", "Australia", "Asia"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which country has the highest number of volcanoes?",
+          "options": ["Indonesia", "Japan", "United States", "Italy"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the largest freshwater lake in the world by volume?",
+          "options": [
+            "Lake Superior",
+            "Lake Victoria",
+            "Lake Baikal",
+            "Lake Tanganyika"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which mountain is the tallest in Africa?",
+          "options": [
+            "Mount Kenya",
+            "Mount Kilimanjaro",
+            "Mount Elgon",
+            "Ras Dashen"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the longest mountain range in the world?",
+          "options": ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the capital city of Japan?",
+          "options": ["Osaka", "Tokyo", "Kyoto", "Nagoya"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which continent is the coldest?",
+          "options": ["North America", "Europe", "Antarctica", "Asia"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the sea that separates Europe and Africa?",
+          "options": [
+            "Baltic Sea",
+            "Red Sea",
+            "Mediterranean Sea",
+            "Black Sea"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which river flows through Paris?",
+          "options": ["Thames", "Danube", "Seine", "Rhine"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which desert is located in Southern Africa?",
+          "options": ["Sahara", "Namib", "Kalahari", "Arabian"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the capital of South Korea?",
+          "options": ["Busan", "Seoul", "Incheon", "Daegu"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which river is the main water source of Egypt?",
+          "options": ["Nile", "Amazon", "Tigris", "Euphrates"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the official language of Brazil?",
+          "options": ["Spanish", "Portuguese", "English", "French"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country is known as the Land of the Rising Sun?",
+          "options": ["China", "South Korea", "Japan", "Thailand"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the capital city of Egypt?",
+          "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is the largest lake in Africa?",
+          "options": [
+            "Lake Victoria",
+            "Lake Tanganyika",
+            "Lake Malawi",
+            "Lake Chad"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the capital of India?",
+          "options": ["Mumbai", "New Delhi", "Bangalore", "Kolkata"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the largest desert in Africa?",
+          "options": ["Sahara", "Namib", "Kalahari", "Danakil"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is the largest island in the Mediterranean Sea?",
+          "options": ["Sicily", "Corsica", "Crete", "Cyprus"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which ocean is known as the Southern Ocean?",
+          "options": ["Pacific", "Indian", "Atlantic", "Antarctic"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the currency of the European Union?",
+          "options": ["Pound", "Euro", "Franc", "Dollar"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the second-largest country by area in the world?",
+          "options": ["China", "United States", "Canada", "Russia"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which country is home to the Andes mountain range?",
+          "options": ["Peru", "Argentina", "Chile", "All of the above"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the highest mountain in North America?",
+          "options": [
+            "Mount McKinley",
+            "Mount Logan",
+            "Mount Elbert",
+            "Mount Rainier"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which sea connects to the Atlantic Ocean via the Strait of Gibraltar?",
+          "options": [
+            "Caribbean Sea",
+            "Mediterranean Sea",
+            "Baltic Sea",
+            "Caspian Sea"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country has the most UNESCO World Heritage Sites?",
+          "options": ["China", "Italy", "France", "India"],
+          "correctOption": 1,
+          "points": 10
         }
       ]
     },
+
     {
       "category": "Science",
       "questions": [
@@ -212,9 +416,161 @@
           ],
           "correctOption": 3,
           "points": 10
+        },
+        {
+          "question": "What is the chemical formula for methane?",
+          "options": ["CH4", "CO2", "C2H6", "C3H8"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a noble gas?",
+          "options": ["Oxygen", "Nitrogen", "Helium", "Carbon Dioxide"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the largest planet in our solar system?",
+          "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the process by which plants make their own food?",
+          "options": [
+            "Respiration",
+            "Digestion",
+            "Photosynthesis",
+            "Fermentation"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "How many bones are in the adult human body?",
+          "options": ["206", "208", "212", "220"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the most common element in Earth's crust?",
+          "options": ["Iron", "Oxygen", "Silicon", "Aluminum"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Venus", "Earth", "Mercury", "Mars"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the chemical symbol for gold?",
+          "options": ["Ag", "Au", "Pb", "Fe"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which part of the cell is responsible for energy production?",
+          "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Endoplasmic Reticulum"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the atomic number of hydrogen?",
+          "options": ["1", "2", "3", "4"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the primary function of white blood cells?",
+          "options": [
+            "Transport oxygen",
+            "Fight infection",
+            "Carry nutrients",
+            "Regulate temperature"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of these is a fossil fuel?",
+          "options": ["Coal", "Wood", "Solar Energy", "Wind Energy"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which of these is not a type of rock?",
+          "options": ["Igneous", "Sedimentary", "Metamorphic", "Sandy"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the basic unit of heredity?",
+          "options": ["Cell", "Gene", "Chromosome", "DNA"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "How many planets are in our solar system?",
+          "options": ["7", "8", "9", "10"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What does the term 'biodiversity' refer to?",
+          "options": [
+            "Number of species in a habitat",
+            "Total biomass of an ecosystem",
+            "Variety of plant and animal life",
+            "Amount of water in an ecosystem"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What type of bond holds two water molecules together?",
+          "options": [
+            "Ionic bond",
+            "Covalent bond",
+            "Hydrogen bond",
+            "Metallic bond"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which part of the brain controls breathing?",
+          "options": ["Cerebrum", "Cerebellum", "Medulla Oblongata", "Pons"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What is the most common type of star in the Milky Way?",
+          "options": ["Red giant", "White dwarf", "Main sequence", "Supernova"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+          "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the main component of the Sun?",
+          "options": ["Oxygen", "Hydrogen", "Carbon", "Helium"],
+          "correctOption": 1,
+          "points": 10
         }
       ]
     },
+
     {
       "category": "History",
       "questions": [

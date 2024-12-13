@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
+import { useQuestion } from '../contexts/QuestionsContext'
 import Button from './Button'
 import { Options } from './Options'
 import styles from './StartScreen.module.css'
 
-export const StartScreen = ({ data, category, dispatch, alert }) => {
+export const StartScreen = () => {
+  const { dispatch, data, category, alert } = useQuestion()
+
   return (
     <div className={styles.start}>
       <h2>Welcome to The SmartQuest Game!</h2>
