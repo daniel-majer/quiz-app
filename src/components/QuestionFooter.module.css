@@ -1,0 +1,111 @@
+.questionFooter .confirm {
+  border: 2px solid orange;
+}
+.questionFooter .confirm:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--btn-bg);
+}
+
+.questionFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.questionFooter button {
+  width: 16rem;
+  font-size: 2rem;
+  padding: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  background: transparent;
+  border-radius: 10rem;
+
+  position: relative;
+  display: inline-block;
+  outline: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 2px solid orange;
+  color: orange;
+}
+.questionFooter button:hover {
+  color: #fff;
+}
+.questionFooter button:hover:after {
+  width: 100%;
+}
+.questionFooter button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: var(--transition);
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: orange;
+}
+.questionFooter button:disabled {
+  border: 1px solid var(--btn-bg);
+  color: #ffffff72;
+  cursor: not-allowed;
+  font-weight: normal;
+}
+.questionFooter button:disabled:hover:after {
+  width: 0%;
+}
+
+.questionFooter p {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10rem;
+  border: 1px solid var(--btn-bg);
+  display: inline-block;
+}
+.questionFooter div {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .questionFooter button {
+    width: 14rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  .questionFooter p {
+    font-size: 1.8rem;
+    padding: 1.1rem 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .questionFooter button {
+    width: 12rem;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+  }
+  .questionFooter p {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+  .questionFooter div {
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .questionFooter button {
+    width: 9rem;
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  .questionFooter p {
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+  }
+  .questionFooter div {
+    gap: 1.4rem;
+  }
+}

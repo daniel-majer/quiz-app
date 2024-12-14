@@ -708,6 +708,261 @@
           ],
           "correctOption": 0,
           "points": 10
+        },
+
+        {
+          "question": "Who was the first president of the United States?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "John Adams",
+            "Abraham Lincoln"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What year did World War II end?",
+          "options": ["1944", "1945", "1946", "1947"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Who wrote the Declaration of Independence?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "James Madison",
+            "Benjamin Franklin"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which empire built the Colosseum?",
+          "options": ["Greek", "Roman", "Ottoman", "Byzantine"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "In what year did the Titanic sink?",
+          "options": ["1910", "1912", "1914", "1916"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Who was the leader of Nazi Germany?",
+          "options": [
+            "Joseph Stalin",
+            "Adolf Hitler",
+            "Benito Mussolini",
+            "Winston Churchill"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What ancient civilization built the Pyramids of Giza?",
+          "options": ["Aztecs", "Romans", "Egyptians", "Mayans"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was known as the Maid of Orleans?",
+          "options": [
+            "Marie Antoinette",
+            "Joan of Arc",
+            "Cleopatra",
+            "Elizabeth I"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year did the Berlin Wall fall?",
+          "options": ["1987", "1988", "1989", "1990"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the first man to step on the moon?",
+          "options": [
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "Neil Armstrong",
+            "Michael Collins"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the ship on which the Pilgrims traveled to America in 1620?",
+          "options": ["Mayflower", "Santa Maria", "Endeavour", "Beagle"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the last Queen of France before the French Revolution?",
+          "options": [
+            "Marie Antoinette",
+            "Catherine de' Medici",
+            "Anne of Austria",
+            "Marguerite of Valois"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who discovered America in 1492?",
+          "options": [
+            "Christopher Columbus",
+            "Ferdinand Magellan",
+            "Amerigo Vespucci",
+            "John Cabot"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which war was fought between the North and South regions in the United States?",
+          "options": [
+            "Revolutionary War",
+            "Civil War",
+            "War of 1812",
+            "Spanish-American War"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the ship Charles Darwin traveled on?",
+          "options": [
+            "HMS Beagle",
+            "HMS Victory",
+            "HMS Endeavour",
+            "HMS Discovery"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who was the first emperor of Rome?",
+          "options": ["Julius Caesar", "Augustus", "Nero", "Tiberius"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What event started World War I?",
+          "options": [
+            "The sinking of Lusitania",
+            "The assassination of Archduke Franz Ferdinand",
+            "Germany invading Belgium",
+            "The Treaty of Versailles"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What was the primary purpose of the Magna Carta?",
+          "options": [
+            "To declare independence from England",
+            "To limit the power of the king",
+            "To establish freedom of religion",
+            "To create a new government"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year did the United States land a man on the moon?",
+          "options": ["1967", "1968", "1969", "1970"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the British Prime Minister during most of World War II?",
+          "options": [
+            "Neville Chamberlain",
+            "Winston Churchill",
+            "Clement Attlee",
+            "Anthony Eden"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What empire was ruled by Genghis Khan?",
+          "options": ["Roman", "Mongol", "Ottoman", "Ming"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the first successful English colony in America?",
+          "options": ["Plymouth", "Roanoke", "Jamestown", "Salem"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the ruler of the Soviet Union during World War II?",
+          "options": [
+            "Vladimir Lenin",
+            "Joseph Stalin",
+            "Nikita Khrushchev",
+            "Leonid Brezhnev"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year did the Great Fire of London occur?",
+          "options": ["1664", "1665", "1666", "1667"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who led the civil rights movement in the United States during the 1960s?",
+          "options": [
+            "Malcolm X",
+            "Martin Luther King Jr.",
+            "John F. Kennedy",
+            "Rosa Parks"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What was the name of the treaty that ended World War I?",
+          "options": [
+            "Treaty of Paris",
+            "Treaty of Versailles",
+            "Treaty of Ghent",
+            "Treaty of Tordesillas"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year did the American Civil War begin?",
+          "options": ["1860", "1861", "1862", "1863"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which city was the capital of the Byzantine Empire?",
+          "options": ["Rome", "Athens", "Constantinople", "Alexandria"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the first female Prime Minister of the United Kingdom?",
+          "options": [
+            "Margaret Thatcher",
+            "Theresa May",
+            "Angela Merkel",
+            "Hillary Clinton"
+          ],
+          "correctOption": 0,
+          "points": 10
         }
       ]
     },
@@ -863,9 +1118,254 @@
           ],
           "correctOption": 0,
           "points": 10
+        },
+        {
+          "question": "What is the name of Simba's father in 'The Lion King'?",
+          "options": ["Scar", "Mufasa", "Zazu", "Rafiki"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which movie features the character Captain Jack Sparrow?",
+          "options": [
+            "Pirates of the Caribbean",
+            "Treasure Island",
+            "The Goonies",
+            "Peter Pan"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who is the creator of the Star Wars franchise?",
+          "options": [
+            "George Lucas",
+            "Steven Spielberg",
+            "James Cameron",
+            "Ridley Scott"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which actress played Katniss Everdeen in 'The Hunger Games'?",
+          "options": [
+            "Emma Watson",
+            "Jennifer Lawrence",
+            "Kristen Stewart",
+            "Scarlett Johansson"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year was the first Disney movie released?",
+          "options": ["1928", "1937", "1945", "1950"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which sitcom features the characters Chandler, Monica, and Joey?",
+          "options": [
+            "Friends",
+            "How I Met Your Mother",
+            "Seinfeld",
+            "The Office"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the kingdom in 'Frozen'?",
+          "options": ["Arendelle", "Narnia", "Asgard", "Hyrule"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which actor portrayed the Joker in 'The Dark Knight'?",
+          "options": [
+            "Heath Ledger",
+            "Joaquin Phoenix",
+            "Jared Leto",
+            "Jack Nicholson"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie features a magical nanny named Mary Poppins?",
+          "options": [
+            "Mary Poppins",
+            "The Sound of Music",
+            "Bedknobs and Broomsticks",
+            "Chitty Chitty Bang Bang"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who composed the music for the movie 'The Lion King'?",
+          "options": [
+            "Hans Zimmer",
+            "John Williams",
+            "James Horner",
+            "Alan Silvestri"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "In which movie does a robot named WALL-E appear?",
+          "options": ["WALL-E", "Big Hero 6", "Robots", "I, Robot"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie features the iconic line 'I'll be back'?",
+          "options": ["The Terminator", "Predator", "Die Hard", "Commando"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the cowboy in 'Toy Story'?",
+          "options": ["Woody", "Buzz", "Rex", "Hamm"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which superhero is known as the 'Dark Knight'?",
+          "options": ["Batman", "Superman", "Spider-Man", "Iron Man"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which actor played Wolverine in the X-Men movies?",
+          "options": [
+            "Hugh Jackman",
+            "Chris Hemsworth",
+            "Ryan Reynolds",
+            "Tom Hardy"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who sang the hit song 'Rolling in the Deep'?",
+          "options": ["Adele", "Beyoncé", "Rihanna", "Lady Gaga"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "In 'The Hunger Games,' what is the name of Katniss's sister?",
+          "options": ["Primrose", "Rue", "Effie", "Clove"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie features the iconic DeLorean time machine?",
+          "options": [
+            "Back to the Future",
+            "The Terminator",
+            "Blade Runner",
+            "Inception"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who played the lead role in the movie 'Gladiator'?",
+          "options": [
+            "Russell Crowe",
+            "Joaquin Phoenix",
+            "Mel Gibson",
+            "Brad Pitt"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the AI in '2001: A Space Odyssey'?",
+          "options": ["HAL 9000", "WALL-E", "Siri", "Jarvis"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which 90s boy band sang 'I Want It That Way'?",
+          "options": ["Backstreet Boys", "NSYNC", "Boyz II Men", "Westlife"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What color pill does Neo take in 'The Matrix'?",
+          "options": ["Red", "Blue", "Green", "Yellow"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which character does Johnny Depp play in the 'Pirates of the Caribbean' films?",
+          "options": [
+            "Will Turner",
+            "Davy Jones",
+            "Captain Jack Sparrow",
+            "Barbossa"
+          ],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Who wrote 'The Shining'?",
+          "options": [
+            "Stephen King",
+            "Edgar Allan Poe",
+            "J.K. Rowling",
+            "Agatha Christie"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which movie features the characters Lightning McQueen and Mater?",
+          "options": ["Cars", "Planes", "Toy Story", "Finding Nemo"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Who played Forrest Gump in the movie?",
+          "options": [
+            "Tom Hanks",
+            "Robert Redford",
+            "Brad Pitt",
+            "Leonardo DiCaprio"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "In which year was the first Star Wars movie released?",
+          "options": ["1975", "1977", "1979", "1980"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Who won the first season of American Idol?",
+          "options": [
+            "Kelly Clarkson",
+            "Carrie Underwood",
+            "Adam Lambert",
+            "Jennifer Hudson"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the subtitle of 'Avengers 4'?",
+          "options": ["Infinity War", "Age of Ultron", "Endgame", "Civil War"],
+          "correctOption": 2,
+          "points": 10
         }
       ]
     },
+
     {
       "category": "Technology",
       "questions": [
@@ -977,6 +1477,225 @@
           "question": "Which programming language is used for web development and starts with 'J'?",
           "options": ["JavaScript", "Java", "Jython", "Julia"],
           "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which tech company is known for its search engine and Android operating system?",
+          "options": ["Microsoft", "Apple", "Google", "Amazon"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What does GPU stand for?",
+          "options": [
+            "Graphics Processing Unit",
+            "General Processing Unit",
+            "Global Processing Unit",
+            "Graphic Power Unit"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the most widely used programming language for building websites?",
+          "options": ["HTML", "Python", "C++", "Kotlin"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What company owns the Oculus brand of VR devices?",
+          "options": ["Microsoft", "Meta (Facebook)", "Sony", "Google"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which email service is provided by Google?",
+          "options": ["Yahoo Mail", "Gmail", "Hotmail", "Outlook"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which device is used to connect multiple devices to a network?",
+          "options": ["Router", "Monitor", "Printer", "Webcam"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What does 'URL' stand for?",
+          "options": [
+            "Universal Resource Locator",
+            "Uniform Resource Locator",
+            "Unified Reference Locator",
+            "Universal Reference Link"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which company produces the PlayStation series of gaming consoles?",
+          "options": ["Nintendo", "Sony", "Microsoft", "Sega"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What year was the programming language Python first released?",
+          "options": ["1989", "1991", "1995", "2000"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which company created the 'Alexa' virtual assistant?",
+          "options": ["Apple", "Microsoft", "Google", "Amazon"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the open-source operating system widely used for servers?",
+          "options": ["Windows", "macOS", "Linux", "Unix"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What does 'IoT' stand for in technology?",
+          "options": [
+            "Internet of Technology",
+            "Internet of Things",
+            "Interconnected Online Technology",
+            "Input of Technology"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the primary function of a firewall in a computer system?",
+          "options": [
+            "Data storage",
+            "Network security",
+            "File transfer",
+            "Performance optimization"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which company developed the Windows operating system?",
+          "options": ["Apple", "Google", "Microsoft", "IBM"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What year was YouTube founded?",
+          "options": ["2004", "2005", "2006", "2007"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the term for malicious software designed to harm or exploit a computer system?",
+          "options": ["Spyware", "Malware", "Adware", "Worm"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the online cloud storage service provided by Microsoft?",
+          "options": ["Dropbox", "iCloud", "Google Drive", "OneDrive"],
+          "correctOption": 3,
+          "points": 10
+        },
+        {
+          "question": "Which programming language is most commonly used for iOS app development?",
+          "options": ["Python", "JavaScript", "Swift", "C++"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "What does 'DNS' stand for?",
+          "options": [
+            "Domain Name Service",
+            "Domain Name System",
+            "Data Network System",
+            "Digital Name Service"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which company is known for its MacBook line of laptops?",
+          "options": ["Microsoft", "Apple", "Dell", "HP"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What does the term 'HTML' stand for?",
+          "options": [
+            "HyperText Markup Language",
+            "HighText Markup Language",
+            "HyperTool Markup Language",
+            "HyperText Markdown Language"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which company developed the programming language Java?",
+          "options": ["Google", "Sun Microsystems", "Microsoft", "Oracle"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of Google's cloud-based document editing suite?",
+          "options": [
+            "Google Docs",
+            "Microsoft Word",
+            "Evernote",
+            "Dropbox Paper"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Which file format is used for high-quality images and supports transparency?",
+          "options": ["JPEG", "PNG", "GIF", "BMP"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the main purpose of encryption?",
+          "options": [
+            "Compressing data",
+            "Securing data",
+            "Backing up data",
+            "Analyzing data"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What does the term 'Open Source' refer to?",
+          "options": [
+            "Software with freely available source code",
+            "Software with limited licenses",
+            "Paid software",
+            "Software developed by a single company"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the term for the physical components of a computer?",
+          "options": ["Software", "Hardware", "Firmware", "Middleware"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Which programming language is commonly used for data analysis and machine learning?",
+          "options": ["Java", "R", "C++", "PHP"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "What is the name of the cryptocurrency based on blockchain technology?",
+          "options": ["Bitcoin", "Ether", "Litecoin", "All of the above"],
+          "correctOption": 3,
           "points": 10
         }
       ]

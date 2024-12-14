@@ -4,6 +4,12 @@ const QuestionContext = createContext()
 
 const MAX_SEC = 300
 
+function getRandomQuestions(array, count) {
+  const shuffled = array.sort(() => 0.5 - Math.random())
+
+  return shuffled.slice(0, count)
+}
+
 // 'loading', 'error', 'ready', 'active', 'finished'
 const initialState = {
   data: [],
@@ -22,13 +28,17 @@ function reducer(state, action) {
   switch (action.type) {
     case 'data':
       return { ...state, data: action.payload.categories, status: 'ready' }
-      
+
     case 'category': {
       const findItem = state.data.find(
         q => q.category.toLowerCase() === action.payload.toLowerCase()
       ) || { category: 'choose', questions: [] }
 
-      const { category, questions } = findItem
+      let { category, questions } = findItem
+
+      if (questions.length) questions = getRandomQuestions(questions, 15)
+
+      console.log(questions)
       return {
         ...state,
         category: category.toLowerCase(),

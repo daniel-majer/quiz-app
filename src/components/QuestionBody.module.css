@@ -1,0 +1,101 @@
+.questionName {
+  font-size: 2.2rem;
+}
+.questionName h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.questionName div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-bottom: 5rem;
+}
+.questionName button {
+  color: #fff;
+  border: 2px solid var(--btn-bg);
+  background-color: var(--btn-bg);
+  border-radius: 10rem;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.questionName button:hover {
+  background-color: transparent;
+}
+.questionName .colorAnswers {
+  background-color: orange;
+}
+.questionName .colorAnswers:hover {
+  background-color: #00afbf;
+}
+.questionName .colorAnswers:disabled:hover {
+  background-color: orange;
+  cursor: not-allowed;
+}
+.questionName .choosenAnswer {
+  background-color: #00afbf;
+  transform: translateX(3rem);
+}
+.questionName .uncorrect {
+  background-color: red;
+}
+.questionName .uncorrect:disabled:hover {
+  background-color: red;
+}
+
+.questionName .correct {
+  animation: blinkAnimation 0.6s linear forwards 10;
+  transform: translateX(3rem);
+}
+
+@keyframes blinkAnimation {
+  0% {
+    background-color: #049caa;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: #049caa;
+  }
+}
+
+@media (max-width: 1024px) {
+  .questionName h4 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .questionName {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .questionName h4 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  .questionName {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .questionName h4 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  .questionName {
+    font-size: 1.8rem;
+  }
+
+  .questionName .correct {
+    transform: translateX(1.2rem);
+  }
+  .questionName .choosenAnswer {
+    transform: translateX(1.2rem);
+  }
+}
