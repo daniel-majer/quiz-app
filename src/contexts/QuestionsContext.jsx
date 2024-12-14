@@ -38,7 +38,6 @@ function reducer(state, action) {
 
       if (questions.length) questions = getRandomQuestions(questions, 15)
 
-      console.log(questions)
       return {
         ...state,
         category: category.toLowerCase(),
@@ -66,7 +65,6 @@ function reducer(state, action) {
       return { ...state, answer: action.payload }
 
     case 'confirm':
-      console.log(state.questions[state.index].correctOption)
       return {
         ...state,
         isConfirm: true,
@@ -115,6 +113,9 @@ function QuestionsProvider({ children }) {
     },
     dispatch,
   ] = useReducer(reducer, initialState)
+
+  const maxScore = questions.reduce((acc, curr) => curr.points + acc, 0)
+
   return (
     <QuestionContext.Provider
       value={{
@@ -129,6 +130,7 @@ function QuestionsProvider({ children }) {
         score,
         seconds,
         dispatch,
+        maxScore,
       }}
     >
       {children}

@@ -2,11 +2,7 @@ import styles from './QuestionHeader.module.css'
 import { useQuestion } from '../contexts/QuestionsContext'
 
 export const QuestionHeader = () => {
-  const { questions, index, score } = useQuestion()
-
-  const maxScore = questions.reduce((acc, curr) => {
-    return curr.points + acc
-  }, 0)
+  const { questions, index, score, maxScore } = useQuestion()
 
   return (
     <header className={styles.questionsHeader}>

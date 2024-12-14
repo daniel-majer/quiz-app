@@ -4,20 +4,24 @@ import Button from './Button'
 import styles from './Finish.module.css'
 
 export const Finish = () => {
-  const { dispatch, score, questions } = useQuestion()
+  const { dispatch, score, maxScore } = useQuestion()
+
+  let emoji
 
   const [storedValue] = useLocalStorage('highscore', score)
 
-  const maxScore = questions.reduce((acc, curr) => {
-    return curr.points + acc
-  }, 0)
+  const percentage = Math.ceil((score / maxScore) * 100)
 
-  const percentage = Math.floor((score / maxScore) * 100)
+  if (percentage === 100) emoji = '🥇'
+  if (percentage >= 80 && percentage < 100) emoji = '🎉'
+  if (percentage >= 50 && percentage < 80) emoji = '🙃'
+  if (percentage >= 0 && percentage < 50) emoji = '🤨'
+  if (percentage === 0) emoji = '🤦‍♂️'
 
   return (
     <>
       <p className={styles.score}>
-        🤨 You scored {score} out of {maxScore} ({percentage}%)
+        {emoji} You scored {score} out of {maxScore} ({percentage}%)
       </p>
       <p className={styles.highScore}>(Highscore: {storedValue} points)</p>
       <Button type={'restart'} onclick={() => dispatch({ type: 'restart' })}>
