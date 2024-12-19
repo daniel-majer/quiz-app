@@ -10,7 +10,7 @@ function getRandomQuestions(array, count) {
   return shuffled.slice(0, count)
 }
 
-// 'loading', 'error', 'ready', 'active', 'finished'
+//'loading', 'error', 'ready', 'active', 'finished'
 const initialState = {
   data: [],
   questions: [],
