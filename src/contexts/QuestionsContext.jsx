@@ -11,7 +11,7 @@ function getRandomQuestions(array, count) {
 }
 
 //'loading', 'error', 'ready', 'active', 'finished'
-// working on case-study project for NFCtron these days
+// working on case-study project for NFCtron these day
 const initialState = {
   data: [],
   questions: [],
